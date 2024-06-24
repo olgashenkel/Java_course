@@ -1,3 +1,4 @@
+package src;
 //N-ое треугольное число
 //Вычислить n-ое треугольного число(сумма чисел от 1 до n).
 //***************
@@ -11,39 +12,24 @@
 //n = 5 -> 15
 //*******************************************************************************
 
-//class Answer {
-//    public int countNTriangle(int n) {
-//        // Введите свое решение ниже
-//        if (n < 1) {
-//            return -1;
-//        } else {
-//            int sum = 0;
-//            for (int i = 1; i <= n; i++) {
-//                sum += i;
-//            }
-//            return sum;
-//        }
-//    }
-//}
-//
-//// Не удаляйте этот класс - он нужен для вывода результатов на экран и проверки
-//public class DZ_1 {
-//    public static void main(String[] args) {
-//        int n = 0;
-//
-//        if (args.length == 0) {
-//            // При отправке кода на Выполнение, вы можете варьировать эти параметры
-//            n = 3;
-//        } else {
-//            n = Integer.parseInt(args[0]);
-//        }
-//
-//        // Вывод результата на экран
-//        Answer ans = new Answer();
-//        int itresume_res = ans.countNTriangle(n);
-//        System.out.println(itresume_res);
-//    }
-//}
+public class DZ_1 {
+    public static void main(String[] args) {
+        System.out.println(countNTriangle(5));
+    }
+
+    static int countNTriangle(int n) {
+        int sum = 0;
+        if (n < 1) {
+            return -1;
+        } else {
+            while (n > 0) {
+                sum += n;
+                n--;
+            }
+            return sum;
+        }
+    }
+}
 
 
 /*
