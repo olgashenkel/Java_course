@@ -1,3 +1,4 @@
+package src;
 /*
 Задание №0. Настроим VS Code
 Скачать и установить: https://code.visualstudio.com/download
