@@ -1,0 +1,10 @@
+июн. 26, 2024 4:02:57 AM Task_5 writeArrayToFile
+INFO: Данные успешно записаны.
+июн. 26, 2024 4:04:24 AM Task_5 writeArrayToFile
+INFO: Данные успешно записаны.
+июн. 26, 2024 4:08:02 AM Task_5 writeArrayToFile
+INFO: Данные успешно записаны.
+июн. 26, 2024 4:13:11 AM Task_5 writeArrayToFile
+INFO: Данные успешно записаны.
+июн. 26, 2024 4:14:57 AM Task_5 writeArrayToFile
+WARNING: Ошибка записи в файл.
