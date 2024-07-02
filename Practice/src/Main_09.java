@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main_9 {
+public class Main_09 {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
@@ -25,6 +25,8 @@ public class Main_9 {
         System.out.print("Задание 5.: Введите число: ");
         int number = in.nextInt();
         System.out.println(getNumberExplanation(number));
+
+        in.close();
 
     }
 

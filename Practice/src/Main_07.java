@@ -1,9 +1,9 @@
-public class Main_7 {
+public class Main_07 {
     public static void main(String[] args) {
 
 
 // Использование
-        Main_7.run(); // => ?
+        Main_07.run(); // => ?
 
 //        Main_7.average(1, 5); // 3.0
         System.out.println(average(1, 5));

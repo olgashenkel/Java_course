@@ -1,7 +1,6 @@
-import java.time.LocalDate;
 import java.util.Scanner;
 
-public class Main_3 {
+public class Main_03 {
 
     public static void main(String[] args) {
 

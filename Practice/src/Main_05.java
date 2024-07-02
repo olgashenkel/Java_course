@@ -1,4 +1,4 @@
-public class Main_5 {
+public class Main_05 {
     public static void main(String[] args) {
 
 /*
