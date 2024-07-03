@@ -43,6 +43,8 @@ public class Main_13 {
         String str = in.nextLine();
         System.out.println(revers(str));
 
+        in.close();
+
     }
 
 // Задание 1.

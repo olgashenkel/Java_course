@@ -61,6 +61,8 @@ public class Main_16 {
         char ch = str_1.charAt(0);
         System.out.println(hasChar(str, ch));
 
+        in.close();
+
     }
 
 // Задание 1.

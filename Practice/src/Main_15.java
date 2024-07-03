@@ -67,6 +67,8 @@ public class Main_15 {
         System.out.print("Введите номер интервала, через который \nкаждый символ будет переведен в верхний регистр: ");
         int n = in.nextInt();
         System.out.println(makeItFunny(str, n));
+
+        in.close();
     }
 
 

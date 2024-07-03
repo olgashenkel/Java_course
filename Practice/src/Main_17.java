@@ -39,6 +39,8 @@ public class Main_17 {
         String str = in.nextLine();
         System.out.println(encrypt(str));
 
+        in.close();
+
 
     }
 

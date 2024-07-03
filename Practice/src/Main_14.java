@@ -27,6 +27,8 @@ public class Main_14 {
         String str_1 = in.nextLine();
         char ch = str_1.charAt(0);
         System.out.println(filterString(str, ch));
+
+        in.close();
     }
 
 // Задание 1.
