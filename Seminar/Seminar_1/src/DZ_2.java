@@ -17,35 +17,34 @@ package src;
  * ...
  */
 
-public class DZ_2 {
-    public static void main(String[] args) {
-        printPrimeNums();
-    }
 
-    static void printPrimeNums() {
+class Answer_2 {
+    public void printPrimeNums(){
+        // Напишите свое решение ниже
 
-        int N = 1000;
-        boolean[] isPrime = new boolean[N + 1];
-
-        for (int i = 2; i <= N; i++) {
-            isPrime[i] = true;
-        }
-
-        for (int p = 2; p * p <= N; p++) {
-            if (isPrime[p] == true) {
-                for (int i = p * p; i <= N; i += p) {
-                    isPrime[i] = false;
-                }
+        boolean isprime;
+        for(int i = 2; i <= 1000; i++) {
+            isprime = true;
+            // проверить, делится ли число без остатка
+            for(int j = 2; j <= Math.sqrt(i); j++) {
+                // если число делится без остатка, значит, оно не простое
+                if((i % j) == 0) isprime = false;
             }
-        }
-
-        for (int i = 2; i <= N; i++) {
-            if (isPrime[i] == true) {
-                System.out.println(i);
-            }
+            if(isprime) System.out.println(i);
         }
     }
 }
+
+// Не удаляйте этот класс - он нужен для вывода результатов на экран и проверки
+public class DZ_2{
+    public static void main(String[] args) {
+
+        Answer_2 ans = new Answer_2();
+        ans.printPrimeNums();
+    }
+}
+
+
 
 
 

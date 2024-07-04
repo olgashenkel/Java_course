@@ -21,32 +21,17 @@ package src;// Калькулятор
 //**************************************************
 
 
-import java.io.IOException;
-import java.util.Scanner;
+class Calculator {
+    public double calculate(char op, int a, int b) {
+        // Введите свое решение ниже
 
-public class DZ_3 {
-    public static void main(String[] args) throws IOException {
-
-        System.out.print("Введите операцию для выполнения (+, -, *, /): ");
-        char op = (char) System.in.read();
-        Scanner in = new Scanner(System.in);
-        System.out.print("Введите первое число: ");
-        int a = in.nextInt();
-        System.out.print("Введите второе число: ");
-        int b = in.nextInt();
-
-        System.out.println(calculate(op, a, b));
-
-    }
-
-    static double calculate(char op, int a, int b) {
         double result = 0;
         switch (op) {
             case '*':
                 result = a * b;
                 break;
             case '/':
-                result = (double) a / b;
+                result = a / b;
                 break;
             case '+':
                 result = a + b;
@@ -59,6 +44,35 @@ public class DZ_3 {
     }
 }
 
+// Не удаляйте этот класс - он нужен для вывода результатов на экран и проверки
+public class DZ_3 {
+    public static void main(String[] args) {
+        int a = 0;
+        char op = ' ';
+        int b = 0;
+
+        if (args.length == 0) {
+            // При отправке кода на Выполнение, вы можете варьировать эти параметры
+            a = 3;
+            op = '+';
+            b = 7;
+        } else {
+            a = Integer.parseInt(args[0]);
+            op = args[1].charAt(0);
+            b = Integer.parseInt(args[2]);
+        }
+
+        if (op != '+' && op != '-' && op != '*' && op != '/') {
+            System.out.printf("Некорректный оператор: %c", op);
+            return;
+        }
+
+
+        Calculator calculator = new Calculator();
+        double result = calculator.calculate(op, a, b);
+        System.out.println(result);
+    }
+}
 
 
 // ****************************************************
