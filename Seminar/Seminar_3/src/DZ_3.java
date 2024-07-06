@@ -24,31 +24,34 @@
 
 
 
-import java.util.Arrays;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 class Answer_3 {
     public static void analyzeNumbers(Integer[] arr) {
         // Введите свое решение ниже
 
-        ArrayList<Integer> list = new ArrayList<>(arr.length);
-        double sum = 0;
-        for (Integer elem : arr) {
-            list.add(elem);
+        //- Создаёт список ArrayList, заполненный числами из исходого массива arr:
+        ArrayList<Integer> newArr = new ArrayList<Integer>(arr.length);
+        Collections.addAll(newArr, arr);
+//        System.out.println(newArr);
+
+        //- Сортирует список по возрастанию и выводит на экран:
+        Collections.sort(newArr);
+        System.out.println(newArr);
+
+        //- Находит минимальное значение в списке и выводит на экран - Minimum is {число}:
+        System.out.println("Minimum is " + Collections.min(newArr));
+
+        // Находит максимальное значение в списке и выводит на экран - Maximum is {число}:
+        System.out.println("Maximum is " + Collections.max(newArr));
+
+        //- Находит среднее арифметическое значений списка и выводит на экран - Average is =  {число}:
+        int sum = 0;
+        for (int elem : newArr) {
             sum += elem;
         }
 
-        Collections.sort(list);
-        int max = list.get(list.size() - 1);
-        int min = list.get(0);
-        double avg = sum / list.size();
-
-        System.out.println(list);
-        System.out.println("Minimum is " + min);
-        System.out.println("Maximum is " + max);
-        System.out.println("Average is " + avg);
+        System.out.println("Average is " + (double) sum / newArr.size());
     }
 }
 
