@@ -18,16 +18,18 @@ import java.util.LinkedList;
 class LLTasks {
     public static LinkedList<Object> revert(LinkedList<Object> ll) {
         // Напишите свое решение ниже
-        LinkedList<Object> lls = new LinkedList<Object>();
-        for(int i = ll.size() - 1; i >= 0; i--){
-            lls.add(ll.get(i));
+
+        LinkedList<Object> reversList = new LinkedList<>();
+
+        for (int i = ll.size() - 1; i >= 0; i--) {
+            reversList.add(ll.get(i));
         }
-        return lls;
+        return reversList;
     }
 }
 
 // Не удаляйте этот класс - он нужен для вывода результатов на экран и проверки
-public class DZ_1{
+public class DZ_1 {
     public static void main(String[] args) {
         LinkedList<Object> ll = new LinkedList<>();
 
