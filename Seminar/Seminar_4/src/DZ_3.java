@@ -28,38 +28,36 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 class Calculator {
-    private Deque<Double> deque;
-
-    public Calculator() {
-        deque = new ArrayDeque<>();
-    }
+    public Deque<Double> resultsStack = new ArrayDeque<>();
+    public double prevResult;
 
     public double calculate(char op, int a, int b) {
         // Напишите свое решение ниже
-        double result = 0.0;
 
-        if (op == '+') {
-            result = a + b;
-            deque.addFirst(result);
-        } else if (op == '-') {
-            result = a - b;
-            deque.addFirst(result);
-        } else if (op == '*') {
-            result = a * b;
-            deque.addFirst(result);
-        } else if (op == '/') {
-            result = (double) a / b;
-            deque.addFirst(result);
-        } else if (op == '<') {
-            if (!deque.isEmpty()) {
-                return deque.removeLast();
-            } else {
-                throw new IllegalStateException("Deque is empty");
-            }
+        double result = 0;
+        switch (op) {
+            case '*':
+                result = a * b;
+                resultsStack.offer(result);
+                break;
+            case '/':
+                result = a / b;
+                resultsStack.offer(result);
+                break;
+            case '+':
+                result = a + b;
+                resultsStack.offer(result);
+                break;
+            case '-':
+                result = a - b;
+                resultsStack.offer(result);
+                break;
+            case '<':
+                resultsStack.pollLast();
+                resultsStack.peekLast();
+                break;
         }
-
-        return deque.getFirst();
-
+        return resultsStack.peekLast();
 
     }
 }
