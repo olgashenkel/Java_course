@@ -56,11 +56,8 @@ class HeapSort {
     public static void heapSort(int[] sortArray, int sortLength) {
 // Введите свое решение ниже
 
-// Строим кучу из массива
         buildHeap(sortArray);
 
-
-        // Сортируем кучу
         for (int i = sortLength - 1; i >= 0; i--) {
             int temp = sortArray[0];
             sortArray[0] = sortArray[i];
