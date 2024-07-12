@@ -20,13 +20,13 @@ public class Cat {
 //    Пол (sex)
 //    Награды (awards)
 
-    private String name;    // privat - для исключения изменений из вне.
+    private String name;    // privat - для исключения изменений извне.
     private int age;
     private String color;
     private String owner;
 
     public Cat(String name, int age, String color, String owner) {
-        // public - конструктор всегда публичный (доступный из вне)
+        // public - конструктор всегда публичный (доступный извне)
         this.name = name;
         this.age = age;
         this.color = color;
