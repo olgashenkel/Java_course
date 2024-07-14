@@ -25,6 +25,7 @@ public class Cat {
     private String color;
     private String owner;
 
+// Конструктор - для создания экземпляра класса и инициализации полей значений по умолчанию
     public Cat(String name, int age, String color, String owner) {
         // public - конструктор всегда публичный (доступный извне)
         this.name = name;
