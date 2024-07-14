@@ -33,7 +33,7 @@
    * [Домашнее задание. Задача 2: Подсчет повторяющихся имен](https://github.com/olgashenkel/Java_course/blob/main/Seminar/Seminar_5/src/DZ_2.java)
    * [Домашнее задание. Задача 3: Сортировка массива с использованием кучи](https://github.com/olgashenkel/Java_course/blob/main/Seminar/Seminar_5/src/DZ_3.java)
 6. [Урок 6. Хранение и обработка данных ч3: множество коллекций Set](https://github.com/olgashenkel/Java_course/blob/main/Seminar/Seminar_6/src)
-   * [Промежуточная аттестация]()
+   * [Промежуточная аттестация. Задание: Подумать над структурой класса Ноутбук для магазина техники](https://github.com/olgashenkel/Java_course/tree/main/Seminar/Final_work/src)
 
 ---
 ---
