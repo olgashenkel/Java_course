@@ -33,7 +33,7 @@ public class LaptopMain {
 
     public static void main(String[] args) {
 
-        Laptop.gritings();  // Приветствие пользователя
+        Laptop.gritings();  // Приветствие пользователя в зависимости от времени суток
 
         // Создание коллекции Set для хранения сведений о ноутбуках
         Set<Laptop> laptops = new HashSet<>();
