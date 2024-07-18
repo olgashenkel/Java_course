@@ -59,7 +59,7 @@ public class LaptopMain {
 
         HashMap<String, String> requestLaptop = new HashMap<>();
 
-        System.out.println("Для вывода списка интересующих вас моделей, ответьте, пожалуйста на несколько вопросов." + System.lineSeparator());
+        System.out.println("Для вывода списка интересующих вас моделей, ответьте, пожалуйста, на несколько вопросов." + System.lineSeparator());
 
         System.out.println("Выберите модель ноутбука.");
         System.out.println("Для корректности ввода Вы можете скопировать название (Ctrl + C) и вставить в поле для ввода (Ctrl + V).");
